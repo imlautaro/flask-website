@@ -1,0 +1,24 @@
+{% extends 'layouts/master.html' %} {% block title %}Contact{% endblock title %}
+{% block content %}
+
+<h1>Contact</h1>
+
+<div class="card card-body">
+	<form>
+		<div class="mb-3">
+			<label class="form-label" for="name">Name: </label>
+			<input class="form-control" type="text" id="name" />
+		</div>
+		<div class="mb-3">
+			<label class="form-label" for="email">Email: </label>
+			<input class="form-control" type="email" id="email" />
+		</div>
+		<div class="mb-3">
+			<label class="form-label" for="message">Message: </label>
+			<textarea class="form-control" id="message"></textarea>
+		</div>
+		<button class="btn btn-primary">Submit</button>
+	</form>
+</div>
+
+{% endblock content %}

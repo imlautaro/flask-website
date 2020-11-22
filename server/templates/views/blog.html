@@ -1,0 +1,19 @@
+{% extends 'layouts/master.html' %} {% block title %}Blog{% endblock title %} {%
+block content %}
+
+<h1>Blog</h1>
+
+<div class="card card-body">
+	<h3>Article</h3>
+	<p>
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptas earum
+		dignissimos voluptatum repellendus. Dolores eligendi quidem consectetur, ea
+		ullam quasi nam id ducimus! Alias praesentium quibusdam doloremque dolorum
+		magnam.
+	</p>
+	<a class="btn btn-primary" href="{{ url_for('web.blog') }}/article"
+		>Read more</a
+	>
+</div>
+
+{% endblock content %}
